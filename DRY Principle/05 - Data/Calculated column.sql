@@ -5,7 +5,3 @@ CREATE TABLE Employees (
     Bonus INT, -- Implicit Calculated column
     TotalSalary AS (BasicSalary + Bonus) -- Explicit Calculated column
 );
-
-
-
-----

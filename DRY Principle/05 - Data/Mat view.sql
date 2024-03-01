@@ -14,5 +14,10 @@ INSERT INTO Employees (Name, BasicSalary, Bonus) VALUES
 
 -- Create the materialized view
 CREATE MATERIALIZED VIEW EmployeeTotalSalary AS
-SELECT EmployeeID, Name, BasicSalary, Bonus, (BasicSalary + Bonus) AS TotalSalary
+SELECT 
+    EmployeeID,
+    Name,
+    BasicSalary,
+    Bonus,
+    (BasicSalary + Bonus) AS TotalSalary
 FROM Employees;
